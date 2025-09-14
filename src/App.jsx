@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Chart from './components/chart'
+import InvoiceList from './components/invoiceList'
 
 function App() {
 
@@ -79,6 +80,19 @@ function App() {
           </div>
         </div>
     </div>
+
+
+
+    {/* Past Invoices */}
+        <div className="w-[90%] m-auto px-4 md:px-6 ">
+          <div className="border-b border-gray-100">
+            <div className="flex items-center justify-between">
+              <h3 className="text-lg font-semibold text-gray-900">Past Invoices</h3>
+              <button className="text-sm text-purple-600 font-medium">View All</button>
+            </div>
+          </div>
+          <InvoiceList />
+        </div>
 
 
       </section>
